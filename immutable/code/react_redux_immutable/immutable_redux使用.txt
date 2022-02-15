@@ -1,0 +1,15 @@
+1. 安装并引入redux-immutable
+安装：yarn add redux-immutable -S
+引入：
+import {combineReducers} from 'redux-immutable';
+
+2. 初始化reducer
+const rootReducer = combineReducers({
+    cart
+});
+// state必须是immutable类型的
+function cart(state, action) {
+	...
+}
+
+3. mapStateToProps的state也是immutable类型的，使用时应该使用get方法

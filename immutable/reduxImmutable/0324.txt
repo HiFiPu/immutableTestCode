@@ -1,0 +1,43 @@
+0. react  
+
+就是数据驱动的框架  
+jQuery 真真切切的操作DOM 
+
+虚拟DOM  object  用来描述 存储在 内存里面记录DOM标签的对象树  (key 对比 )
+
+操作数据  ----- 操作虚拟DOM  ---- 真实DOM 
+
+配套的数据管理方案和框架  （实现组件的数据交换和数据缓存）
+
+vuex  （state action mutations component ==> store） 
+
+redux  (state action reducers  component ==> store) 
+
+a. 组件 components 取到 state 的值 
+b. 发送 action  store.dispatch 
+c. 进入 reducers 根据 type 修改对应的数据 state 
+d. store 会订阅 state, 当state 改变就会 重新刷新组件视图 
+
+单向数据流   （管理数据）
+
+state ---->  reducers  ---->    store  ----->  components   
+
+a. 把初始化的 state 存储在 reducers 
+b. 把reducers 挂载到 store   (store.getState() )
+c. 组件 components 获取到 store 里面的 state 数据 
+d. 修改state 组件发送 store.dispatch 发送 action
+
+flux
+
+mobx    	
+ 
+react-redux （完全遵循 redux  优化 将redux 里面的组件 拆分为 容器组件和 UI 组件 ）
+
+
+1.redux
+
+2.mobx 
+
+
+
+
