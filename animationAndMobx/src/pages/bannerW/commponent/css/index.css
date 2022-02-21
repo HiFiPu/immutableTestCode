@@ -1,0 +1,27 @@
+/* 淡入淡出 */
+.fade-flash-wrapper .Swiper {
+    opacity: 0;
+    transition: opacity .75s linear;
+}
+.fade-flash-wrapper .Swiper:not(:first-child){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fade-flash-wrapper .Swiper.show {
+    z-index: 10000;
+    opacity: 1;
+}
+
+/* 滚动效果 */
+.scroll-flash-wrapper .img-box {
+    width: calc(8 * 100%);
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.scroll-flash-wrapper .Swiper {
+    width: calc(100% / 8);
+}
+
